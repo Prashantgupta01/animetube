@@ -8,12 +8,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './VideoPlayer ';
 
 function App() {
 
   const [data, setData] = useState([])
-
+  console.log("to check Commit")
   useEffect(() => {
    
     fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=&key=AIzaSyCEM5KfGfPeEvIt_evektffdrNDFKTMlms")
